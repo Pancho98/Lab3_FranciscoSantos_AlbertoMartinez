@@ -43,7 +43,7 @@ public class Hombres extends Integrantes{
 
     @Override
     public String toString() {
-        return "Hombres{" + "Attk=" + Attk + ", Def=" + Def + ", Heal=" + Heal + '}';
+        return Nombre +"-Hombre{" + "Attk=" + Attk + ", Def=" + Def + ", Heal=" + Heal + '}';
     }
     
 }

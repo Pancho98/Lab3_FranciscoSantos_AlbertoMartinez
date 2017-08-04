@@ -43,7 +43,7 @@ public class Hobbit extends Integrantes {
 
     @Override
     public String toString() {
-        return "Hobbit{" + "Attk=" + Attk + ", Def=" + Def + ", Heal=" + Heal + '}';
+        return Nombre +"-Hobbit{" + "Attk=" + Attk + ", Def=" + Def + ", Heal=" + Heal + '}';
     }
     
 }

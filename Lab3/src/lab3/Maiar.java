@@ -43,7 +43,7 @@ public class Maiar extends Integrantes {
 
     @Override
     public String toString() {
-        return "Maiar{" + "Attk=" + Attk + ", Def=" + Def + ", Heal=" + Heal + '}';
+        return Nombre +"-Maiar{" + "Attk=" + Attk + ", Def=" + Def + ", Heal=" + Heal + '}';
     }
     
 }

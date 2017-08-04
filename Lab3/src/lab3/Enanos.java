@@ -42,6 +42,6 @@ public class Enanos extends Integrantes {
 
     @Override
     public String toString() {
-        return "Enanos{" + "Attk=" + Attk + ", Def=" + Def + ", Heal=" + Heal + '}';
+        return Nombre +"-Enano{" + "Attk=" + Attk + ", Def=" + Def + ", Heal=" + Heal + '}';
     }
 }
