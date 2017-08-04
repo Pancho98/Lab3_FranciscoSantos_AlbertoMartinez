@@ -20,9 +20,9 @@ public class Lab3 {
             String op2="";
             System.out.println(
                       "a-agregar\n"
-                    + "b-barajar\n"
-                    + "c-repartir\n"
-                    + "d-imprimir ganadores\n"
+                    + "b-modificar\n"
+                    + "c-eliminar\n"
+                    + "d-simulacion\n"
                     + "e-Listado de integrantes\n"
                     + "s-salir");
             op=sc.next();
@@ -34,7 +34,8 @@ public class Lab3 {
                     + "s-salir");
                 op2=sc.next();
                 if (op2.equals("a")){
-                    
+                        Pueblos nuevoPueblo = new Pueblos("Hola");
+                        pueblos.add(nuevoPueblo);
                     }
                     
                 if (op2.equals("b")){
@@ -58,8 +59,18 @@ public class Lab3 {
                     fecha=df.parse(anio+"/"+mes+"/"+dia);
                     System.out.println(fecha);
 
-
                     integrantes.add(new Integrantes(nombre, apellido, altura, fecha));
+                    
+                    System.out.println("Elegir pueblo: ");
+                    int indice = 0;
+                    for (int i = 0; i < pueblos.size(); i++) {
+                        System.out.println((i+1)+".- " + pueblos.get(i).toString());
+                    }
+                    System.out.println("Elegir pueblo: ");
+                    indice = sc.nextInt();
+                    
+                    Pueblos temporal = pueblos.get(indice-10);
+                    temporal.getIntegrantes().add(new Integrantes(nombre, apellido, altura, fecha));
                 }
             }
             if (op.equals("b")) {

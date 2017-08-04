@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 
 public class Pueblos {
-    public ArrayList<Lugares> lugar = new ArrayList();
+    public ArrayList<Integrantes> integrantes = new ArrayList();
     public String nombre;
 
     public Pueblos(String nombre) {
@@ -15,12 +15,12 @@ public class Pueblos {
     public Pueblos() {
     }
 
-    public ArrayList<Lugares> getLugar() {
-        return lugar;
+    public ArrayList<Integrantes> getIntegrantes() {
+        return integrantes;
     }
 
-    public void setLugar(ArrayList<Lugares> lugar) {
-        this.lugar = lugar;
+    public void setIntegrantes(ArrayList<Integrantes> integrantes) {
+        this.integrantes = integrantes;
     }
 
     public String getNombre() {
