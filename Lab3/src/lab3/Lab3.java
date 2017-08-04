@@ -105,7 +105,7 @@ public class Lab3 {
                        
             }
             if (op.equals("d")) {
-                
+                b.BatallaPueblo(pueblos);
             }
             if (op.equals("e")) {
                 for (int i = 0; i < integrantes.size(); i++) {
@@ -117,7 +117,6 @@ public class Lab3 {
                 for (int i = 0; i < pueblos.size(); i++) {
                         System.out.println((i+1)+".- " + pueblos.get(i).toString());
                     }
-                b.BatallaPueblo(pueblos);
             }
         }  
     }
