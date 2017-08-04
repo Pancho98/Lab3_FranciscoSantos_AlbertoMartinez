@@ -1,16 +1,20 @@
 
 package lab3;
 
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+
 import java.util.Date;
 
 
-public class Integrantes extends Pueblos {
+public class Integrantes {
     public String Nombre;
     public String Apellido;
     public double Altura;
     public Date Fecha;
+    ArrayList<Raza> raza=new ArrayList();
 
     public Integrantes() {
         super();

@@ -58,6 +58,7 @@ public class Lab3 {
                     fecha=df.parse(anio+"/"+mes+"/"+dia);
                     System.out.println(fecha);
 
+
                     integrantes.add(new Integrantes(nombre, apellido, altura, fecha));
                 }
             }
@@ -77,5 +78,6 @@ public class Lab3 {
          
             }
         }
-    } 
+    }  
+
 }
