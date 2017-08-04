@@ -1,14 +1,39 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package lab3;
 
-/**
- *
- * @author Francisco Santos
- */
+
 public class Lugares {
+    public int ExtencionT;
+    public int NIntegrantes;
+
+    public Lugares() {
+    }
+
+    public Lugares(int ExtencionT, int NIntegrantes) {
+        this.ExtencionT = ExtencionT;
+        this.NIntegrantes = NIntegrantes;
+    }
+
+    public int getExtencionT() {
+        return ExtencionT;
+    }
+
+    public void setExtencionT(int ExtencionT) {
+        this.ExtencionT = ExtencionT;
+    }
+
+    public int getNIntegrantes() {
+        return NIntegrantes;
+    }
+
+    public void setNIntegrantes(int NIntegrantes) {
+        this.NIntegrantes = NIntegrantes;
+    }
+
+    @Override
+    public String toString() {
+        return "Lugares{" + "ExtencionT=" + ExtencionT + ", NIntegrantes=" + NIntegrantes + '}';
+    }
+    
     
 }
