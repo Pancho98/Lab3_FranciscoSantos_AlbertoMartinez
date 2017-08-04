@@ -13,8 +13,8 @@ public class Elfos extends Integrantes {
         super();
     }
 
-    public Elfos(String Nombre, String Apellido, double Altura, Date fecha) {
-        super(Nombre, Apellido, Altura, fecha);
+    public Elfos(String Nombre, String Apellido, double Altura, Date fecha, Bestias bestia) {
+        super(Nombre, Apellido, Altura, fecha, bestia);
     }
     
     

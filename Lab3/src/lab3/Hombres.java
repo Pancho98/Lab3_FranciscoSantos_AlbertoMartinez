@@ -13,8 +13,8 @@ public class Hombres extends Integrantes{
         super();
     }
 
-    public Hombres(String Nombre, String Apellido, double Altura, Date fecha) {
-        super(Nombre, Apellido, Altura, fecha);
+    public Hombres(String Nombre, String Apellido, double Altura, Date fecha, Bestias bestia) {
+        super(Nombre, Apellido, Altura, fecha, bestia);
     }
 
     public int getAttk() {

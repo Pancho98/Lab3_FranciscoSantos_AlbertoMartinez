@@ -12,8 +12,8 @@ public class Enanos extends Integrantes {
         super();
     }
 
-    public Enanos(String Nombre, String Apellido, double Altura, Date fecha) {
-        super(Nombre, Apellido, Altura, fecha);
+    public Enanos(String Nombre, String Apellido, double Altura, Date fecha, Bestias bestia) {
+        super(Nombre, Apellido, Altura, fecha, bestia);
     }
 
     public int getAttk() {

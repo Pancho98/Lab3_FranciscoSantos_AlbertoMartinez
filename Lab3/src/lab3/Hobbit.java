@@ -13,8 +13,8 @@ public class Hobbit extends Integrantes {
         super();
     }
 
-    public Hobbit(String Nombre, String Apellido, double Altura, Date fecha) {
-        super(Nombre, Apellido, Altura, fecha);
+    public Hobbit(String Nombre, String Apellido, double Altura, Date fecha, Bestias bestia) {
+        super(Nombre, Apellido, Altura, fecha, bestia);
     }
 
     public int getAttk() {

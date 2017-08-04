@@ -6,11 +6,13 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Random;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 
 public class Lab3 {
+    static Random R=new Random();
     static Scanner sc=new Scanner(System.in);
     Simulacion b = new Simulacion();
     public static void main(String[] args) throws ParseException {
@@ -46,6 +48,7 @@ public class Lab3 {
                     String nombre, apellido, anio, mes, dia, raza;
                     double altura;
                     Date fecha;
+                    Bestias b=new Bestias();
                     System.out.print("nombre: ");
                     nombre=sc.next();
                     System.out.print("apellido: ");
@@ -63,7 +66,7 @@ public class Lab3 {
                     fecha=df.parse(anio+"/"+mes+"/"+dia);
                     System.out.println(fecha);
 
-                    integrantes.add(new Integrantes(nombre, apellido, altura, fecha));
+                    integrantes.add(new Integrantes(nombre, apellido, altura, fecha, b));
                     
                     System.out.println("Elegir pueblo: ");
                     int indice = 0;
@@ -82,19 +85,19 @@ public class Lab3 {
                     System.out.println("- maiar");
                     raza=sc.next();
                     if(raza.equals("elfo")){
-                    temporal.getIntegrantes().add(new Elfos(nombre, apellido, altura, fecha));
+                    temporal.getIntegrantes().add(new Elfos(nombre, apellido, altura, fecha, b));
                     }
                     if(raza.equals("enano")){
-                    temporal.getIntegrantes().add(new Enanos(nombre, apellido, altura, fecha));
+                    temporal.getIntegrantes().add(new Enanos(nombre, apellido, altura, fecha, b));
                     }
                     if(raza.equals("hobbit")){
-                    temporal.getIntegrantes().add(new Hobbit(nombre, apellido, altura, fecha));
+                    temporal.getIntegrantes().add(new Hobbit(nombre, apellido, altura, fecha, b));
                     }
                     if(raza.equals("humano")){
-                    temporal.getIntegrantes().add(new Hombres(nombre, apellido, altura, fecha));
+                    temporal.getIntegrantes().add(new Hombres(nombre, apellido, altura, fecha, b));
                     }
                     if(raza.equals("maiar")){
-                    temporal.getIntegrantes().add(new Maiar(nombre, apellido, altura, fecha));
+                    temporal.getIntegrantes().add(new Maiar(nombre, apellido, altura, fecha, b));
                     }
                 }
             }

@@ -14,17 +14,19 @@ public class Integrantes {
     public String Apellido;
     public double Altura;
     public Date Fecha;
+    public Bestias bestia;
     ArrayList<Raza> raza=new ArrayList();
 
     public Integrantes() {
         super();
     }
 
-    public Integrantes(String Nombre, String Apellido, double Altura, Date fecha) {
+    public Integrantes(String Nombre, String Apellido, double Altura, Date fecha, Bestias bestia) {
         this.Nombre = Nombre;
         this.Apellido = Apellido;
         this.Altura = Altura;
         this.Fecha = Fecha;
+        this.bestia=bestia;
     }
 
     public String getNombre() {
