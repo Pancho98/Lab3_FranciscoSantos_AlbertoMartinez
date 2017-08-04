@@ -86,9 +86,14 @@ public class Lab3 {
                 for (int i = 0; i < integrantes.size(); i++) {
                     System.out.println(integrantes.get(i));
                 }
-         
+                
             }
-        }
-    }  
+            if (op.equals("f")) {
+                for (int i = 0; i < pueblos.size(); i++) {
+                        System.out.println((i+1)+".- " + pueblos.get(i).toString());
+                    }
+            }
+        }  
 
+    }
 }

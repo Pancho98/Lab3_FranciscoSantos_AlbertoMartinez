@@ -15,6 +15,14 @@ public class Pueblos {
     public Pueblos() {
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
     public ArrayList<Integrantes> getIntegrantes() {
         return integrantes;
     }
@@ -23,12 +31,9 @@ public class Pueblos {
         this.integrantes = integrantes;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    @Override
+    public String toString() {
+        return "Pueblos{" + "integrantes=" + integrantes + ", nombre=" + nombre + '}';
     }
     
     
