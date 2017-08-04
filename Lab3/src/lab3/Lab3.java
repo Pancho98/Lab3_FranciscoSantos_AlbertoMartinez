@@ -69,7 +69,7 @@ public class Lab3 {
                     System.out.println("Elegir pueblo: ");
                     indice = sc.nextInt();
                     
-                    Pueblos temporal = pueblos.get(indice-10);
+                    Pueblos temporal = pueblos.get(indice-1);
                     temporal.getIntegrantes().add(new Integrantes(nombre, apellido, altura, fecha));
                 }
             }

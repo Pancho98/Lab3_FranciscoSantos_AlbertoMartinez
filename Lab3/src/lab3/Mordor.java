@@ -1,14 +1,35 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package lab3;
 
-/**
- *
- * @author Francisco Santos
- */
-public class Mordor {
+
+public class Mordor extends Pueblos{
+    public int guardianes;
+
+    public Mordor() {
+        super();
+    }
+
+    public Mordor(int guardianes, String nombre) {
+        super(nombre);
+        this.guardianes = guardianes;
+    }
+
+    public Mordor(int guardianes) {
+        this.guardianes = guardianes;
+    }
+
+    public int getGuardianes() {
+        return guardianes;
+    }
+
+    public void setGuardianes(int guardianes) {
+        this.guardianes = guardianes;
+    }
+
+    @Override
+    public String toString() {
+        return "Mordor{" + "guardianes=" + guardianes + '}';
+    }
+    
     
 }
