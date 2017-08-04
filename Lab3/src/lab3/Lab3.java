@@ -12,6 +12,7 @@ import javax.swing.JOptionPane;
 
 public class Lab3 {
     static Scanner sc=new Scanner(System.in);
+    Simulacion b = new Simulacion();
     public static void main(String[] args) throws ParseException {
         ArrayList <Integrantes> integrantes=new ArrayList();
         ArrayList <Pueblos> pueblos=new ArrayList();
@@ -118,6 +119,5 @@ public class Lab3 {
                     }
             }
         }  
-
     }
 }
