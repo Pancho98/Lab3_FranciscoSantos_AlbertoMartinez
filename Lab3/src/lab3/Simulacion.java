@@ -15,5 +15,6 @@ public class Simulacion {
                         System.out.println((i+1)+".- " + pueblos.get(i).toString());
                     }
         System.out.println("Ingresar la posiciones que desea que batallen");
+        
     }
 }
