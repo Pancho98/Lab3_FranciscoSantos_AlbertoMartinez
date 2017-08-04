@@ -10,6 +10,7 @@ public class Integrantes extends Pueblos {
     public double Altura;
     public Date Fecha;
     
+    
         
     
 }
