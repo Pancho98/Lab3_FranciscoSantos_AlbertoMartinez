@@ -1,6 +1,8 @@
 
 package lab3;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 
@@ -14,7 +16,7 @@ public class Integrantes extends Pueblos {
         super();
     }
 
-    public Integrantes(String Nombre, String Apellido, double Altura, Date Fecha) {
+    public Integrantes(String Nombre, String Apellido, double Altura, Date fecha) {
         this.Nombre = Nombre;
         this.Apellido = Apellido;
         this.Altura = Altura;
@@ -55,7 +57,7 @@ public class Integrantes extends Pueblos {
 
     @Override
     public String toString() {
-        return "Integrantes{" + "Nombre=" + Nombre + ", Apellido=" + Apellido + ", Altura=" + Altura + ", Fecha=" + Fecha + '}';
+        return "Nombre=" + Nombre ;
     }
     
     

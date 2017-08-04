@@ -39,6 +39,11 @@ public class Bestias {
     public void setCuracion(int curacion) {
         this.curacion = curacion;
     }
+
+    @Override
+    public String toString() {
+        return "Bestias{" + "Atck=" + Atck + ", Defensa=" + Defensa + ", curacion=" + curacion + '}';
+    }
     
     
 }

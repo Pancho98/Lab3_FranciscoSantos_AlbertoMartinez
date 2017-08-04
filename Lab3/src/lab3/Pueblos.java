@@ -5,25 +5,31 @@ import java.util.ArrayList;
 
 
 public class Pueblos {
-    public ArrayList<Integrantes> raza = new ArrayList();
+    public ArrayList<Lugares> lugar = new ArrayList();
+    public String nombre;
+
+    public Pueblos(String nombre) {
+        this.nombre = nombre;
+    }
 
     public Pueblos() {
-        
     }
 
-    public ArrayList<Integrantes> getRaza() {
-        return raza;
+    public ArrayList<Lugares> getLugar() {
+        return lugar;
     }
 
-    public void setRaza(ArrayList<Integrantes> raza) {
-        this.raza = raza;
+    public void setLugar(ArrayList<Lugares> lugar) {
+        this.lugar = lugar;
     }
 
-    @Override
-    public String toString() {
-        return "Pueblos{" + "raza=" + raza + '}';
+    public String getNombre() {
+        return nombre;
     }
 
-        
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
     
 }
