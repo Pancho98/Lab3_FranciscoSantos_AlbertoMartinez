@@ -46,7 +46,7 @@ public class Bestias {
 
 
     public String toString() {
-        return "Bestias{" + "Atck=" + Atck + ", Defensa=" + Defensa + ", curacion=" + curacion + ", vida=" + vida + '}';
+        return "Bestias";
     }
     
 
