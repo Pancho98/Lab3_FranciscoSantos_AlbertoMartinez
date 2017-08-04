@@ -45,7 +45,7 @@ public class Elfos extends Integrantes {
 
     @Override
     public String toString() {
-        return "Elfos{" + "Attk=" + Attk + ", Def=" + Def + ", Heal=" + Heal + '}';
+        return Nombre + "- Elfo{" + "Attk=" + Attk + ", Def=" + Def + ", Heal=" + Heal + '}';
     }
     
     

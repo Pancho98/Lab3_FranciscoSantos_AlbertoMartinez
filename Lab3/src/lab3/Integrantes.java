@@ -61,7 +61,7 @@ public class Integrantes {
 
     @Override
     public String toString() {
-        return "Nombre=" + Nombre ;
+        return Nombre ;
     }
     
     

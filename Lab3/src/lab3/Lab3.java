@@ -34,12 +34,15 @@ public class Lab3 {
                     + "s-salir");
                 op2=sc.next();
                 if (op2.equals("a")){
-                        Pueblos nuevoPueblo = new Pueblos("Hola");
-                        pueblos.add(nuevoPueblo);
+                    String name="";
+                    System.out.println("Escriba el nombre del nuevo pueblo");
+                    name=sc.next();
+                    Pueblos nuevoPueblo = new Pueblos(name);
+                    pueblos.add(nuevoPueblo);
                     }
                     
                 if (op2.equals("b")){
-                    String nombre, apellido, anio, mes, dia;
+                    String nombre, apellido, anio, mes, dia, raza;
                     double altura;
                     Date fecha;
                     System.out.print("nombre: ");
@@ -70,7 +73,28 @@ public class Lab3 {
                     indice = sc.nextInt();
                     
                     Pueblos temporal = pueblos.get(indice-1);
-                    temporal.getIntegrantes().add(new Integrantes(nombre, apellido, altura, fecha));
+                    System.out.println("que raza es?: ");
+                    System.out.println("- elfo");
+                    System.out.println("- enano");
+                    System.out.println("- hobbit");
+                    System.out.println("- humano");
+                    System.out.println("- maiar");
+                    raza=sc.next();
+                    if(raza.equals("elfo")){
+                    temporal.getIntegrantes().add(new Elfos(nombre, apellido, altura, fecha));
+                    }
+                    if(raza.equals("enano")){
+                    temporal.getIntegrantes().add(new Enanos(nombre, apellido, altura, fecha));
+                    }
+                    if(raza.equals("hobbit")){
+                    temporal.getIntegrantes().add(new Hobbit(nombre, apellido, altura, fecha));
+                    }
+                    if(raza.equals("humano")){
+                    temporal.getIntegrantes().add(new Hombres(nombre, apellido, altura, fecha));
+                    }
+                    if(raza.equals("maiar")){
+                    temporal.getIntegrantes().add(new Maiar(nombre, apellido, altura, fecha));
+                    }
                 }
             }
             if (op.equals("b")) {
