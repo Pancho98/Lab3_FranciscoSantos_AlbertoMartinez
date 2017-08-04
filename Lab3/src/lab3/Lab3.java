@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
 
 public class Lab3 {
     static Scanner sc=new Scanner(System.in);
-    Simulacion b = new Simulacion();
+    static Simulacion b = new Simulacion();
     public static void main(String[] args) throws ParseException {
         ArrayList <Integrantes> integrantes=new ArrayList();
         ArrayList <Pueblos> pueblos=new ArrayList();
@@ -117,6 +117,7 @@ public class Lab3 {
                 for (int i = 0; i < pueblos.size(); i++) {
                         System.out.println((i+1)+".- " + pueblos.get(i).toString());
                     }
+                b.BatallaPueblo(pueblos);
             }
         }  
     }
